@@ -2,3 +2,11 @@ GitHub Branch - Main is first created branch. Branch is isolate development work
 Safely we can experiment with our new ideas
 fix bug
 develop features
+
+
+GitHub - web application developed with the base of Git
+
+Repositories - A folder container all the file related to the project
+Read me file - basic instruction about the project
+Commit - Saving the file
+Create Repository - upload a file and commit in main branch whenever update in uploaded file we will commit with diff versions.
