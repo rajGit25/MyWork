@@ -1,0 +1,117 @@
+
+ctrl+backslash to command mutiple lines
+ctrl+Shift+o - import or remove unwanted import commands
+
+taskkill /f /im chromedriver.exe
+
+./Drivers/chromedriver.exe
+
+By ID, Name, LinkText, Partial LinkText, Class Name, Tag Name, CSS, Xpath
+
+For textbox in search - sendKeys("rahul shetty academy"+Keys.ENTER);
+
+out from Loop use the break;
+variable.equalsIgnoreCase("value") - to avoid case sensitive in page
+
+File concept to check files in folders.
+File variable name = new File("location");
+File[] totalFile = filelocation.listFiles(); - saving all in totalfile
+for each to get name and match and confirm file is there or not
+
+StringSelection - store the string which is transferable.
+
+for keyboard actions we need to use Robot function.
+Robot robot = new Robot();
+robot.keyPress(keyEvent.VK_keywewant);
+robot.keyRelease(keyEvent.VK_keywewant);
+
+naturalwidth=0  which means it is broken image.
+if(variablename.getAttribute("baturalWidth").equals("0")){
+sysout("broken")
+}
+
+Stale Element Reference Exception - when page refresh or we came back to same page we need to find element again
+The element has been deleted entirely
+The element is no longer attached to the DOM(Document Object Module)
+
+change string to Int - use Integer.parseInt()
+------------------------------------------------------------------------------------------
+13 methods to perform various activity in Webapplication
+get() - use to go to URL
+getTitle()- this will capture the title of the page opened by Webdriver
+getCurrentURL()- use to capture url of the page opened
+getPageSource()- capture html source code of the page open
+findElement()- to identify one element in webpage
+findElements() - to identify multiple elements in webpage
+close() - close one window where the control in
+quit() - close all the window opened by webdriver
+getWindowHandle() - selenium launches a window it assign a uniqe ID to every window. we can capture this window handler using this method.
+getWindowHandles() - selenium launches mutilpe window with each uniqe ID to every window. we can capture all window ID's using this method.
+switchTo()- use to switch from one window to other also can switch into a frame and alert.
+            eg: driver.switchTO().window();
+		driver.switchTO().alert();
+		driver.switchTO().frame();
+navigate()- use to navigate the url also use to click backward or forward of the browser.
+		eg: -   driver.navigate().to("URL");
+			driver.navigate().back();
+			driver.navigate().forward();
+			driver.navigate().refresh();
+
+manage()- managing windows
+
+iframes(Add's in original page) - will not accept by our driver. 
+frame doesn't have id or name mark it as 0.
+driver.switchTo().defaultContent(); - swtich to parent html tag
+driver.switchTo().frmae(1, id, name);
+
+Alert - driver.driver.switchTo().alert();
+
+Drag & Drop - mousehover actions use. action.clickAndHold(From).moveToElement(To).release(To).build().perform();
+	      actions.dragAndDrop(source, Target).build().perform();
+
+Tool Tip - Find the element and get the title attribute. save in string
+
+Selectable - can be used in two methods clickAndHold() or keyDown(keys.CONTROL)
+
+----------------------------------------------------------------------
+
+clear()- clearing the input fields before entering some data
+getText() - capture any visible text in application
+getAttribute() - capture the properties of a element
+getLocation().x - capture the x coordinate of a element
+getLocation().y - capture the y coordinate of a element
+getSize()-capture the size of input fields
+getTagName()- capture html tag of web element
+isDisplayed()- use to check element is visible of hidden
+isSelected() - check if checkbox is selected or option in dropdown select or radio button in selected.
+isEnabled() - check webelement enable or disable
+
+
+xpath axes
+Relative Xpath
+Absolute Xpath
+
+general syntax - //Element[@attribute='value']
+//Element[@attribute='value'][numbers for index based]
+
+//Elementname[text()='Exact Text in Screen']
+//Elementname[container(text(),'partial text in screen')]
+//Elementname[@attribute='value'][@attribute='value'][@attribute='value']
+//Elementname[starts-with(text(),'starting text')]
+
+Parent
+
+//known element/parent::elementname - give immediate parent
+
+Child
+
+ancestors
+
+following
+//legend[contains(text(),'Radio')]//following::input[2]
+
+preceding
+
+following sibling
+
+preceding sibling
